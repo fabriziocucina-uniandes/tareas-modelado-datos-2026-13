@@ -1,5 +1,3 @@
-
-
 SELECT
     c.Nombre  AS Cliente,
     pr.Nombre AS Proveedor,
