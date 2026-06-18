@@ -66,26 +66,6 @@ CREATE TABLE Cliente (
     NombreGrupoCompra     VARCHAR(50),
     NombreCategoria       VARCHAR(50),
     PRIMARY KEY (ID_Cliente_DWH)
-);-- ---------------------- Tabla de Hechos Movimiento -----------
-CREATE TABLE Hecho_Movimiento (
-    ID_Movimiento            INT AUTO_INCREMENT,
-    ID_Fecha                 INT,
-    ID_Producto_DWH          SMALLINT,
-    ID_Proveedor_DWH         INT,
-    ID_Cliente_DWH           INT,
-    ID_Tipo_transaccion_DWH  TINYINT,
-    Cantidad                 INT,
-    PRIMARY KEY (ID_Movimiento),
-    CONSTRAINT fk_mov_fecha     FOREIGN KEY (ID_Fecha)
-        REFERENCES Fecha(ID_Fecha),
-    CONSTRAINT fk_mov_producto  FOREIGN KEY (ID_Producto_DWH)
-        REFERENCES Producto(ID_Producto_DWH),
-    CONSTRAINT fk_mov_proveedor FOREIGN KEY (ID_Proveedor_DWH)
-        REFERENCES Proveedor(ID_Proveedor_DWH),
-    CONSTRAINT fk_mov_cliente   FOREIGN KEY (ID_Cliente_DWH)
-        REFERENCES Cliente(ID_Cliente_DWH),
-    CONSTRAINT fk_mov_tipo      FOREIGN KEY (ID_Tipo_transaccion_DWH)
-        REFERENCES TipoTransaccion(ID_Tipo_transaccion_DWH)
 );
 
 -- ---------------------- Tabla de Hechos Movimiento -----------
