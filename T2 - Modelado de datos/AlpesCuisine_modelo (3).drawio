@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="AlpesCuisine - Modelo dimensional" id="alpescuisine">
+    <mxGraphModel dx="1572" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Hecho_PlanificacionMenu&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_Cotizacion (degenerada)&lt;br&gt;FK_Cliente&lt;br&gt;FK_TipoEvento&lt;br&gt;FK_Fecha&lt;br&gt;FK_Hora&lt;br&gt;FK_Lugar&lt;br&gt;FK_TipoComida&lt;br&gt;FK_Restriccion_1&lt;br&gt;FK_Restriccion_2&lt;br&gt;FK_Entrada&lt;br&gt;FK_Principal&lt;br&gt;FK_Postre&lt;br&gt;FK_Bebida&lt;hr size=&quot;1&quot;&gt;&lt;b&gt;&lt;i&gt;Medidas&lt;/i&gt;&lt;br&gt;&lt;/b&gt;num_platos_adultos&lt;br&gt;num_platos_ninos&lt;br&gt;num_postres&lt;br&gt;num_bebidas&lt;br&gt;valor_total_cotizacion&lt;br&gt;pago_inicial" vertex="1">
+          <mxGeometry height="370" width="260" x="530" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Dim_Cliente&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_Cliente (PK)&lt;br&gt;tipo_cliente (natural/empresarial)&lt;br&gt;nombre&lt;br&gt;documento (cedula/NIT)&lt;br&gt;zona_domicilio&lt;br&gt;sector&lt;br&gt;actividad_economica&lt;br&gt;email&lt;br&gt;celular" vertex="1">
+          <mxGeometry height="185" width="220" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Dim_TipoEvento&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_TipoEvento (PK)&lt;br&gt;tipo (boda / conferencia /&lt;br&gt;celebracion privada)" vertex="1">
+          <mxGeometry height="90" width="200" x="580" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Dim_Fecha&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_Fecha (PK)&lt;br&gt;fecha&lt;br&gt;dia&lt;br&gt;mes&lt;br&gt;trimestre&lt;br&gt;anio&lt;br&gt;dia_semana&lt;br&gt;temporada" vertex="1">
+          <mxGeometry height="170" width="170" x="1000" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Dim_Hora&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_Hora (PK)&lt;br&gt;hora&lt;br&gt;franja_horaria&lt;br&gt;(manana/mediodia/noche)" vertex="1">
+          <mxGeometry height="110" width="190" x="1110" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Dim_Lugar&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_Lugar (PK)&lt;br&gt;nombre&lt;br&gt;direccion&lt;br&gt;ciudad&lt;br&gt;zona&lt;br&gt;capacidad" vertex="1">
+          <mxGeometry height="140" width="170" x="1000" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Dim_TipoComida&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_TipoComida (PK)&lt;br&gt;tipo_cocina&lt;br&gt;(italiana, espanola,&lt;br&gt;arabe, griega...)" vertex="1">
+          <mxGeometry height="110" width="200" x="580" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Dim_Restriccion&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_Restriccion (PK)&lt;br&gt;descripcion&lt;br&gt;(sin picante, baja en sal,&lt;br&gt;alergia mariscos...)" vertex="1">
+          <mxGeometry height="110" width="210" x="120" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;spacingLeft=8;spacingTop=4;fontSize=11;" value="&lt;b&gt;Dim_ItemMenu&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;ID_ItemMenu (PK)&lt;br&gt;nombre_item&lt;br&gt;categoria (entrada/principal/&lt;br&gt;postre/bebida)&lt;br&gt;descripcion" vertex="1">
+          <mxGeometry height="130" width="210" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" edge="1" parent="1" source="n12" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;" target="n11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" edge="1" parent="1" source="n13" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;" target="n11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n22" edge="1" parent="1" source="n14" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;" target="n11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n23" edge="1" parent="1" source="n15" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;" target="n11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n24" edge="1" parent="1" source="n16" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;" target="n11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n25" edge="1" parent="1" source="n17" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;" target="n11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n26" edge="1" parent="1" source="n18" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;exitX=0.7;exitY=0;entryX=0.25;entryY=1;" target="n11" value="rol: restriccion 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n27" edge="1" parent="1" source="n18" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;exitX=1;exitY=0.4;entryX=0.45;entryY=1;" target="n11" value="rol: restriccion 2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n28" edge="1" parent="1" source="n19" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;exitX=1;exitY=0.15;entryX=0;entryY=0.15;" target="n11" value="rol: entrada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n29" edge="1" parent="1" source="n19" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;exitX=1;exitY=0.4;entryX=0;entryY=0.4;" target="n11" value="rol: principal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n30" edge="1" parent="1" source="n19" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;exitX=1;exitY=0.65;entryX=0;entryY=0.6;" target="n11" value="rol: postre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n31" edge="1" parent="1" source="n19" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#666666;exitX=1;exitY=0.9;entryX=0;entryY=0.85;" target="n11" value="rol: bebida">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
