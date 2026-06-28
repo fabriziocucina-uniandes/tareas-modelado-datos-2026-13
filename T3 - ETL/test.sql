@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM DB_202613_f_cucina.Fecha_t3;
